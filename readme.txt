@@ -61,7 +61,7 @@ Basic trics :
 	- Optimizations like memoization can enhance efficiency.
 	- Common use cases include sorting algorithms (QuickSort, MergeSort) and decision-making problems (e.g., backtracking for puzzles).
 
---------------------------------------------------------------------------------------------------------------------------------------------------	
+------------------------------------------------------------------------------------------------------------------------------------------
 Linear Data Structures:
 
 	Arrays:
@@ -74,7 +74,7 @@ Linear Data Structures:
 	-> bitwise XOR can cancel same elements of an array
 	-> HashSet Can be use to avoid duplicate elements
 
-	----------------------------------------------------------------------------------------------------------------------------------------------	
+	--------------------------------------------------------------------------------------------------------------------------------------
 	Linked-Lists:
 	- A linked list is a dynamic data structure where elements (nodes) are stored in separate memory locations, 
 	each containing data and a pointer to the next node.
@@ -89,7 +89,7 @@ Linear Data Structures:
 	4. Circular Doubly Linked List: Each node points to both the next and previous nodes, and the last node points back to the first node.
 	5. Skip List: A layered linked list with nodes that skip over intermediate nodes for faster search.
 
-	----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	Stacks :
 	- A stack in Java is a data structure that follows the Last-In-First-Out (LIFO) principle. 
 	This means that the last element added (pushed) to the stack is the first one to be removed (popped).
@@ -100,7 +100,7 @@ Linear Data Structures:
 		peek(): Returns the item at the top without removing it.
 		isEmpty(): Checks if the stack is empty.
 		size(): Returns the number of items in the stack.
-	----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	Queues:
 	- A queue in Java is a data structure that follows the First-In-First-Out (FIFO) principle.
 	This means that the first element added (enqueued) to the queue is the first one to be removed (dequeued).
@@ -124,7 +124,7 @@ Linear Data Structures:
 	2. LinkedList class: Implements Queue interface.
 	3. PriorityQueue class: Implements the Priority Queue.
 	4. ArrayDeque class: Implements the Deque interface.
-	----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	HashMaps:(most faster)
 	- Stores key-value pairs and allows constant-time complexity (on average) for basic operations like insertion, lookup, and deletion.
 	- It follows the Hashing technique to map keys to values, and it does not maintain any order of the keys or values. 
@@ -145,7 +145,7 @@ Linear Data Structures:
 		LinkedHashMap: Maintains insertion order, useful for predictable iteration.
 		WeakHashMap: Keys are weak references, meaning that they can be garbage collected when no longer in use.
 		ConcurrentHashMap: Thread-safe HashMap for concurrent access.
---------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 Non Linear Data Structures:
 
 Trees:
@@ -172,7 +172,7 @@ Trees:
 	- Java implementations:
 	TreeSet class: Implements a self-balancing BST in Java's Collections Framework.
 	TreeMap class: Implements a Red-Black tree-based structure for mapping key-value pair ((value will be returned sorted way))
-	----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	Binary Search Trees (BST):
 	- A Binary Search Tree is a node-based data structure where each node follows the rule that the 
 	left subtree contains only values smaller than the node, 
@@ -188,7 +188,7 @@ Trees:
 		preorder(): Traverses the tree starting with the root (root, left, right).
 		postorder(): Traverses the tree with leaves first (left, right, root).
 
-	----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	AVL Tree:
 	- A self-balancing binary search tree where the height difference (balance factor) between left and right subtrees is at most 1 for any node.
 	- Rotations to fix imbalance:
@@ -200,7 +200,7 @@ Trees:
 	- Use case: Preferred when frequent lookups or searches require strictly balanced trees (O(log n) operations).
 	- Java Example: Custom implementation, ideal for applications needing fast lookups.
 	
-	----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	Red-Black Tree:
 	- A self-balancing binary search tree with nodes colored red or black to maintain balance.
 	- Properties: Root is always black, no two consecutive red nodes, and all paths must have the same number of black nodes.
@@ -210,7 +210,7 @@ Trees:
 		Often used with color flips (recoloring red and black nodes).
 	Use case: Used in Java's TreeMap and TreeSet for efficient insertion, deletion, and lookups with O(log n) complexity.
 	
-------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 Heap:
 	- A Heap is a special tree-based data structure(Complete Binary Tree) that satisfies the heap property: 
 	- In a Max-Heap, the parent node is always greater than or equal to its children.
@@ -221,7 +221,7 @@ Heap:
 	- Use case: Efficient for priority-based tasks, scheduling, and algorithms like Heap Sort and Dijkstra's algorithm.
 	- Java Example: PriorityQueue class implements a min-heap by default.
 	
-----------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 Trie (prefix tree):
 	- A Trie (pronounced "try") is a tree-like data structure where each node represents a character, commonly used for storing words.(Narry)
 	- Allows fast prefix searches, where common prefixes are shared among branches to save space and time.
@@ -237,7 +237,7 @@ Trie (prefix tree):
 													  / \          \
 													 t*  r*         g*
 
----------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 Graph :
 	- A graph is like a social network of points (nodes/vertices) connected by lines (edges)!
 		A ●───● B
@@ -252,7 +252,7 @@ Graph :
 
 		In-degree: Incoming edges (for directed graphs)
 		Out-degree: Outgoing edges (for directed graphs)
-	-----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	- Types of Graphs :
 		a) Directed vs Undirected
 		Undirected: A ●───● B    Directed: A ●──→● B
@@ -283,7 +283,7 @@ Graph :
 				
 		Weighted Graph: Road maps with distances, network routing with bandwidth, flight paths with costs.
 		Unweighted Graph: Social networks, communication networks, simple relationship modeling
-	-----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	- Graph Representations :
 		a) Adjacency Matrix
 		  A B C
@@ -304,7 +304,7 @@ Graph :
 		Space: O(V + E)
 		Good for: Sparse(!Dense) graphs
 		Used in most real applications!
-	-----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	- BFS Traversal:
 		Start from a node (source vertex).	
 		Visit all its adjacent (neighboring) vertices.
@@ -327,7 +327,7 @@ Graph :
 		- DFS uses a stack (either an explicit stack or the call stack in recursion) to backtrack once it hits a dead end.
 			
 		- DFS is useful for tasks like cycle detection, topological sorting, and exploring all possible paths in a graph.
-	-----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	-  Topological Sort:
 		Topological Sort is a way to arrange nodes (vertices) of a Directed Acyclic Graph (DAG) 
 		such that for every edge going from one node to another, the first node comes before the second in the order.( u → v, vertex u comes before v)
@@ -351,7 +351,7 @@ Graph :
 		
 		A common use case is task scheduling, where some tasks must be completed before others
 		(e.g., resolving dependencies in project management).
-	-----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	- Shortest Path Algorithm:
 	Shortest Path Problem: The goal is to find the minimum distance or cost to travel from one vertex (node) to another in a graph.
 	This is especially useful in weighted graphs where edges have different costs (weights).
@@ -365,7 +365,7 @@ Graph :
 		Repeat: Mark the current vertex as visited and repeat the process until all vertices have been visited, ensuring the shortest path to each is found.
 
 	- Usecase; GPS Navigation ,Network Routing
-	-----------------------------------------------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------------------------------
 	- Spanning Tree: A spanning tree of a graph is a subgraph that includes all vertices, has exactly
 	V−1 edges (where 𝑉 is the number of vertices), and is connected and acyclic.
 	
@@ -379,7 +379,7 @@ Graph :
 		Repeat: Continue selecting the smallest edges and adding unvisited vertices until all vertices are included in the MST.
 		
 	- Purpose: Used in network design, to minimize the cost of connecting all nodes.
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 	What is Bubble Sort?
 	-> Bubble sort is a simple comparison-based algorithm that works by repeatedly swapping adjacent elements if they are in the wrong order until 
 	the list is sorted. It is called bubble sort because the algorithm pushes the largest elements to the end of the list, 
@@ -409,6 +409,6 @@ Graph :
 	-> The basic idea behind Quick Sort is to divide the list into smaller sublists and sort each sublist recursively until the entire list is sorted.
 	The algorithm works by selecting a pivot element from the list, partitioning the list into two sublists based on the pivot, 
 	and then recursively sorting each sublist.
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 	
 

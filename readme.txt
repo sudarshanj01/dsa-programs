@@ -1,9 +1,9 @@
 Data structure :
 	linear : Arrays, Linked-Lists, Stacks, Queues, HashMaps
-	Non Linear : Tree,Heaps,Tries, Graph
+	Non_Linear : Tree,Heaps,Tries, Graph
 	
 Time & space Complexity :
-	Measurment notations 
+	Measurement notations
 		1.Big O notation (O-notation) worst case complexity  --> most used 
 		2.Ω-notation (Omega notation) best case complexity
 		3.Θ-notation (Theta notation) average case complexity
@@ -27,11 +27,11 @@ Bitwise operartors :
 	->And(&), OR(|) Operator :
 			last bit 1 -> odd number
 			last bit 0 -> even number				
-	eg :if number & 1 == 0 it is a even number	
+	eg :if number & 1 == 0 it is an even number
 	
 	->NOT(~) operartor -  inverts all the bits of a number
 	2's complement in NOT(~) operartor  -> not the binary number and add 1 
-	left most bit is a sign of a number, 0 = positive and 1 = negative)
+	left most bit is a sign of a number, (0 = positive and 1 = negative)
 												
 	->XOR(^) Same bits → 0, Different bits → 1
 			In short: XOR outputs 1 only if the bits are different.

@@ -1,3 +1,5 @@
+package l_javaInterview;
+
 interface PaymentStrategy {
     void pay(int amount);
 }

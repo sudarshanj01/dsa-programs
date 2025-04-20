@@ -1,6 +1,8 @@
+package l_javaInterview;
+
 public class Singleton {
     private Singleton() {
-        System.out.println("Singleton instance created."); // To see when it's created
+        System.out.println("javaInterview.Singleton instance created."); // To see when it's created
     }
 
     public static Singleton getInstance() {

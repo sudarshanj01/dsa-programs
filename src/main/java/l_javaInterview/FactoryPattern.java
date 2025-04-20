@@ -1,3 +1,5 @@
+package l_javaInterview;
+
 interface Shape {
     void draw();
 }

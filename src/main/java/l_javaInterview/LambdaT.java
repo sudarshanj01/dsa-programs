@@ -1,3 +1,5 @@
+package l_javaInterview;
+
 import java.util.function.*;
 
 public class LambdaT {

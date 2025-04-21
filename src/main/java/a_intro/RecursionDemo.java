@@ -12,6 +12,17 @@ public class RecursionDemo {
         return n * fact(n - 1); // Recursive case
     }
 
+    public static int fact2(int n){
+       int res=1;
+
+       for (int i =2 ; i<= n ;i++){
+           res = res * i;
+       }
+
+       return res;
+
+    }
+
     public static int test1(int n) {
         if (n == 1) return 1; // Base case
         // Recursive case: builds the number by appending digits
@@ -24,7 +35,7 @@ public class RecursionDemo {
     }
 
     public static void main(String[] args) {
-        System.out.println(fact(5));   // Output: 120
+        System.out.println(fact2(5));   // Output: 120
         System.out.println(test1(5));  // Output: 12345
         System.out.println(test2(5));  // Output: 15
     }

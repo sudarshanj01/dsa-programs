@@ -33,4 +33,11 @@ public class PaymentContext {
     public void PayNow(int amount) {
         paymentStrategy.pay(amount);
     }
+
+    public static void main(String[] args) {
+        PaymentContext paymentContext = new PaymentContext();
+        paymentContext.setPaymentStrategy(new CreditCardPayment());
+
+        paymentContext.PayNow(20);
+    }
 }

@@ -1,18 +1,35 @@
 package l_javaInterview;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Programs {
     public static void main(String[] args) {
         Programs programs = new Programs();
-        System.out.println(programs.anagram("sdc", "dcs"));
 
-        System.out.println(programs.palindrome("madam"));
+        LinkedList<Integer> sample = new LinkedList<>();
+        sample.add(1);
+        sample.add(2);
+        sample.add(3);
 
-        System.out.println(new StringBuilder(new String("sudarshan")).reverse());
+        System.out.println(programs.reverseLL(sample));
 
-        String og = "suarsha";
+    }
 
+    public LinkedList<Integer> reverseLL(LinkedList<Integer> ogList) {
+        LinkedList<Integer> result = new LinkedList<>();
+
+        // Create a copy to avoid modifying the original during iteration
+        LinkedList<Integer> copy = new LinkedList<>(ogList);
+
+        // Remove from the end of copy and add to result
+        while (!copy.isEmpty()) {
+            result.add(copy.removeLast());
+        }
+
+        return result;
     }
 
     private boolean anagram(String s1, String s2) {
@@ -55,7 +72,6 @@ public class Programs {
 
         return new String(chars);
     }
-
 
 
 

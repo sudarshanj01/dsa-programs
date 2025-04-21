@@ -1,11 +1,25 @@
 package d_stacks;
 
+import java.util.Arrays;
 import java.util.EmptyStackException;
+import java.util.Objects;
 
 class MyStack {
     int[] items;
     int top;
     int size;
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        MyStack myStack = (MyStack) o;
+        return top == myStack.top && size == myStack.size && Objects.deepEquals(items, myStack.items);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(Arrays.hashCode(items), top, size);
+    }
 
     public MyStack(int size) {
         this.size = size;

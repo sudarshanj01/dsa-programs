@@ -1,4 +1,4 @@
-package l_javaInterview;
+package l_javaPatterns;
 
 public class Singleton {
     private Singleton() {

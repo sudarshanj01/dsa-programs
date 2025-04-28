@@ -1,4 +1,4 @@
-package l_javaInterview;
+package l_javaPatterns;
 
 import java.util.ArrayList;
 import java.util.List;

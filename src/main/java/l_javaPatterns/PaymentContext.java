@@ -1,4 +1,4 @@
-package l_javaInterview;
+package l_javaPatterns;
 
 interface PaymentStrategy {
     void pay(int amount);

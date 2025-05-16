@@ -2,6 +2,8 @@ package M_java_programs;
 
 import java.util.HashSet;
 
+//arr = [2, 7, 11, 15], target = 9 → true (2 + 7)
+//arr = [1, 2, 3, 4], target = 8 → false
 public class PairSumCheck {
     public static boolean hasPairWithSum(int[] nums, int target) {
         HashSet<Integer> seen = new HashSet<>();
